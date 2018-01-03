@@ -1,0 +1,17 @@
+<div class="space-ship">
+  <div>
+    <h2>{{spaceShip.modelName | shipName:spaceShip.pilot?.fullName}}</h2>
+    <div>
+      <div class='avatar'><img class="pilot-image" *ngIf="spaceShip.pilot" [src]="spaceShip.pilot.imageUrl" [title]="spaceShip.pilot.fullName" appSpaceImage/></div>
+      <div class='add'>
+        <div class="property-state" [class.active]="spaceShip.activeShields"></div>
+        <div class="activeWeapon" [class.active]="spaceShip.activeWeapon"></div>
+      </div>
+      <img [src]="spaceShip.imageUrl"/>  
+    </div> 
+    <div class="health-bar">
+        <div class="health-bar--value" [style.width.%]="spaceShip.health" [title]="spaceShip.health + '%'"></div>
+    </div>
+    <ng-content></ng-content>
+  </div>
+</div>

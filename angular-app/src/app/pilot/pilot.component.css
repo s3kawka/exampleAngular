@@ -1,0 +1,21 @@
+.pilot{
+    padding:10px;
+    overflow: hidden;
+    float:left;
+}
+h1{
+    font-weight: bold;
+    color:rebeccapurple;
+}
+img{
+    height:150px;
+}
+h4{
+    font-weight: bold;
+    color: deeppink;
+    margin:0;
+}
+:host.selected .pilot{
+    border-radius: 10%;
+    background: rgba(255,255,255,0.5);
+}

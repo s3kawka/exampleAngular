@@ -1,0 +1,68 @@
+.space-ship{
+    border:2px dashed rebeccapurple;
+    margin:2px;
+    float:left;
+    padding:5px;
+}
+.space-ship > div{
+    border:1px dashed deeppink;
+    margin:2px;
+    padding:5px;
+    overflow: hidden;
+    background:rgba(255,255,255,0.2);
+    height: 250px;
+}
+.space-ship > div > div{
+    position: relative;
+}
+.health-bar{
+    background:white;
+    height:20px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+.health-bar--value{
+    background: deeppink;
+    height: 20px;
+    border-radius: 10px;
+}
+.property-state,.activeWeapon{
+    width:30px;
+    height:30px;
+    float:left;
+    display:none;
+    border: 2px dashed hotpink;
+     border-radius: 100%;
+}
+.property-state.active{
+    background:url('/assets/shield.png');
+    display:block;
+    background-size: cover;
+}
+.activeWeapon.active{
+    background:url('/assets/bomb.png');
+    display:block;
+    background-size: cover;
+}
+h2{
+    color:deeppink;
+}
+.avatar{
+    width:50px;
+    height: 50px;
+    border: 2px dashed hotpink;
+    border-radius: 100%;
+    overflow:hidden;
+    float:left;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.avatar img{
+    width: 50px;
+}
+.add{
+    position:absolute;
+    bottom:0;
+    right:0;
+}

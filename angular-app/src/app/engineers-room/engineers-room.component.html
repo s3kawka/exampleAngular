@@ -1,0 +1,11 @@
+<div>
+  <form #form="ngForm" (ngSubmit)="onSubmit(form.value)" novalidate>
+    <input #shipCountInput="ngModel"  [ngModel]="initialShipCount" type="number" name="shipCount" required pattern="[1-5]"/>
+    <div class="error" *ngIf="shipCountInput.hasError('required')">musi być wypełnione</div>
+    <div class="error" *ngIf="shipCountInput.hasError('pattern')">musi mieć wartość między 1 - 5</div>
+    <input type="radio" name="shipType" [value]="availableTypes.Fighter" [ngModel]="initialShipType" required/> Myśliwiec
+    <input type="radio" name="shipType" [value]="availableTypes.Bomber" [ngModel]="initialShipType" required/> Bombowiec
+    <button type="submit" [disabled]="form.invalid || isProducing">Produkuj</button>
+  </form>
+  <p *ngIf="isProducing">Production in progress...</p>
+</div>

@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url('/assets/img.jpg');
+    background-size: cover;
+    margin: 0;
+    font-size:16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    color:lightpink;
+}
+h1{
+    font-size:24px;
+}
+h2{
+    font-size:20px;
+}
+h3{
+    font-size:16px;
+}
+h4{
+    font-size:13px;
+}
+button{
+    border-radius: 5px;
+    background: deeppink;
+    color:white;
+    text-align: center;
+    border:none;
+    padding: 5px 20px;
+}
